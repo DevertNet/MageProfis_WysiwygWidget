@@ -1,0 +1,16 @@
+{
+   "name": "mageprofis/wysiwygwidget",
+   "type": "magento-module",
+   "license": "GPL-3.0",
+   "description": "Add a wysiwyg editor to a widget field.",
+   "homepage": "https://github.com/DevertNet/MageProfis_WysiwygWidget",
+   "authors":[
+        {
+            "name":"Volker Thiel",
+            "name":"Leon Weickert"
+        }
+    ],
+   "require": {
+      "magento-hackathon/magento-composer-installer": "*"
+   }
+}

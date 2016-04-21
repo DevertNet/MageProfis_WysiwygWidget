@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageProfis_WysiwygWidget>
+            <version>1.0.0</version>
+        </MageProfis_WysiwygWidget>
+    </modules>
+
+    <global>
+        <helpers>
+            <mageprofis_wysiwygwidget>
+                <class>MageProfis_WysiwygWidget_Helper</class>
+            </mageprofis_wysiwygwidget>
+        </helpers>
+        <blocks>
+            <mageprofis_wysiwygwidget>
+                <class>MageProfis_WysiwygWidget_Block</class>
+            </mageprofis_wysiwygwidget>
+        </blocks>
+        <models>
+            <mageprofis_wysiwygwidget>
+                <class>MageProfis_WysiwygWidget_Model</class>
+            </mageprofis_wysiwygwidget>
+            <widget>
+                <rewrite>
+                    <widget>MageProfis_WysiwygWidget_Model_Widget</widget>
+                </rewrite>
+            </widget>
+        </models>
+    </global>
+    
+    <adminhtml>
+        <events>
+            <core_layout_update_updates_get_after>
+                <observers>
+                    <mageprofis_wysiwygwidget_core_layout_update_updates_get_after>
+                        <class>mageprofis_wysiwygwidget/observer</class>
+                        <method>addAdminhtmlLayoutXml</method>
+                    </mageprofis_wysiwygwidget_core_layout_update_updates_get_after>
+                </observers>
+            </core_layout_update_updates_get_after>
+        </events>
+    </adminhtml>
+</config>

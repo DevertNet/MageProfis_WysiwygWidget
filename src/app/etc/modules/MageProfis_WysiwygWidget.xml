@@ -1,0 +1,8 @@
+<config>
+   <modules>
+      <MageProfis_WysiwygWidget>
+         <active>true</active>
+         <codePool>local</codePool>
+      </MageProfis_WysiwygWidget>
+   </modules>
+</config>

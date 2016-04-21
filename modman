@@ -1,0 +1,4 @@
+src/app/code/local/MageProfis/WysiwygWidget                                         app/code/local/MageProfis/WysiwygWidget
+src/app/design/adminhtml/default/default/layout/mageprofis_wysiwygwidget.xml        app/design/adminhtml/default/default/layout/mageprofis_wysiwygwidget.xml
+src/app/etc/modules/MageProfis_WysiwygWidget.xml                                    app/etc/modules/MageProfis_WysiwygWidget.xml
+src/skin/adminhtml/default/default/js/mageprofis_wysiwygwidget                      skin/adminhtml/default/default/js/mageprofis_wysiwygwidget
