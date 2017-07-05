@@ -3,8 +3,10 @@ if (typeof(WysiwygWidget)!='undefined') {
         widgetOptionsForm = new varienForm(this.formEl);
 
         // Trigger click on Show/Hide button to copy content from TinyMCE to textarea
-        if ($(this.formEl).down('button.show-hide')) {
-            $(this.formEl).down('button.show-hide').click();
+        var ix = 0;
+        while (typeof $(this.formEl).down('button.show-hide', ix)!='undefined') {
+            $(this.formEl).down('button.show-hide', ix).click();
+            ix++;
         }
 
         if(widgetOptionsForm.validator && widgetOptionsForm.validator.validate() || !widgetOptionsForm.validator){
